@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soroosh Cloudy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #ffffff;
+      color: #0A2540;
+      font-family: 'Inter', sans-serif;
+      padding: 2rem;
+      animation: fadeIn 1s ease;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #0A2540;
+      margin-bottom: 1rem;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .typewriter {
+      font-size: 1.5rem;
+      color: #0A2540;
+      overflow: hidden;
+      border-right: .15em solid #0A2540;
+      white-space: nowrap;
+      animation: typing 3s steps(30, end), blink .75s step-end infinite;
+      max-width: 100%;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: #0A2540 }
+    }
+
+    .projects {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project {
+      border: 2px solid #0A2540;
+      border-radius: 12px;
+      padding: 1rem;
+      transition: transform 0.3s ease, background 0.3s ease;
+      cursor: pointer;
+    }
+
+    .project:hover {
+      transform: translateY(-5px) scale(1.02);
+      background-color: #f5faff;
+    }
+
+    .project h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #0A2540;
+    }
+
+    .project p {
+      font-size: 1rem;
+    }
+
+    a {
+      color: #0A2540;
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Soroosh Cloudy</h1>
+  <div class="typewriter">I design, I edit, I create... with style ☁️</div>
+
+  <div class="projects">
+    <div class="project">
+      <h3>🎬 Glitch Video Edit</h3>
+      <p>اینتروی گلیچی با vibe تاریک. <br><a href="#">دیدن پروژه</a></p>
+    </div>
+    <div class="project">
+      <h3>🎨 کاور موزیک مفهومی</h3>
+      <p>برای یه ترک دارک و الهام‌گرفته از احساس واقعی. <br><a href="#">دیدن پروژه</a></p>
+    </div>
+    <div class="project">
+      <h3>👕 کاستوم هودی</h3>
+      <p>اسکلت سفید روی هودی مشکی با وایتکس دستی. <br><a href="#">دیدن پروژه</a></p>
+    </div>
+  </div>
+</body>
+</html>
